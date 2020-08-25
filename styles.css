@@ -82,15 +82,15 @@ text-shadow: 2px 2px 5px darkgreen;
   color: white;
   padding: 12px 50px;
   border-radius: 25px;
-  z-index: -1;
   text-align: center;
   font-weight: bold;
   font-family: 'Roboto',serif;
   font-size: 0.9rem;
+  z-index: initial;
     margin: 0 1% 0 1%;
     cursor: pointer;
 }
-/* round section */
+/* round 1section */
 .middle-container{
   z-index: 1;
   background-color: white;
@@ -117,11 +117,11 @@ margin-top: -80px;
 }
 .round-1{
   width: 30%;
-  height: 300px;
+  height: 329px;
  float: right;
   margin-left: 30px;
-
-  clip-path:polygon(50% 0, 100% 0%, 100% 100%,0% 100%)
+ margin-top: -28px;
+  clip-path:polygon(45% 0, 100% 0%, 100% 100%,0% 100%)
 }
 .round{
   font-size: 3rem;
@@ -164,5 +164,30 @@ margin-left: 2%;
   font-size: 1rem;
   cursor: pointer;
    margin-left: 2%;
+}
+/* round2 section */
+.matter1{
+  float: right;
+  text-align: left;
+  background-color: #f4f4f4;
+  height: 300px;
+ padding: 6% 20% 24% 4%;
+ width: 100%;
 
+
+}
+.mai1{
+
+    width: 100%;
+    padding: 2% 20% 2% 0;
+    background-color: white;
+    box-shadow: 5px 10px darkgray;
   }
+
+.round-2{
+  float: left;
+  width: 30%;
+  height: 329px;
+  margin-right: 30px;
+   margin-top: -28px;
+}
