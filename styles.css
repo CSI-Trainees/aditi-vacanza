@@ -121,7 +121,7 @@ margin-top: -80px;
  float: right;
   margin-left: 30px;
  margin-top: -28px;
-  clip-path:polygon(45% 0, 100% 0%, 100% 100%,0% 100%)
+  clip-path:polygon(45% 0, 100% 0%, 100% 100%,0% 100%);
 }
 .round{
   font-size: 3rem;
@@ -171,8 +171,8 @@ margin-left: 2%;
   text-align: left;
   background-color: #f4f4f4;
   height: 300px;
- padding: 6% 20% 24% 4%;
- width: 100%;
+ padding: 3% 2% 24% 78%;
+ width: 175%;
 
 
 }
@@ -190,4 +190,42 @@ margin-left: 2%;
   height: 329px;
   margin-right: 30px;
    margin-top: -28px;
+   clip-path: polygon(0 0, 51% 0, 100% 100%, 0 100%);
 }
+.rules1{
+  background-color: transparent;
+    border: 1px solid green;
+    color: darkgreen;
+   padding: 15px 23px 15px 23px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+/* round3 section */
+.matter2{
+  background-color: #f4f4f4;
+  height: 300px;
+ padding: 3% 2% 24% 3%;
+ width: 100%;
+text-align: left;
+float: left;
+}
+.mai2{
+
+    width: 100%;
+    padding: 2% 0% 8% 0;
+    background-color: white;
+    box-shadow: 5px 10px darkgray;
+  }
+  .round-3{
+    width: 32%;
+    height: 345px;
+   float: right;
+
+   margin-top: -25px;
+    clip-path:polygon(45% 0, 100% 0%, 100% 100%,0% 100%)
+  }
+  .rules{
+    margin-top: 8px;
+  }
