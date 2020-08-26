@@ -94,11 +94,11 @@ text-shadow: 2px 2px 5px darkgreen;
 .middle-container{
   z-index: 1;
   background-color: white;
-
+ padding-bottom: 0;
   position: absolute;
  width: 100%;
  top: 650px;
- padding-top: 150px;
+ padding-top: 152px;
  float: left;
  text-align: left;
 }
@@ -206,7 +206,7 @@ margin-left: 2%;
 .matter2{
   background-color: #f4f4f4;
   height: 300px;
- padding: 3% 2% 24% 3%;
+ padding: 3% 2% 35% 3%;
  width: 100%;
 text-align: left;
 float: left;
@@ -226,6 +226,39 @@ float: left;
    margin-top: -25px;
     clip-path:polygon(45% 0, 100% 0%, 100% 100%,0% 100%)
   }
-  .rules{
+  .rules2{
     margin-top: 8px;
+    background-color: transparent;
+      border: 1px solid green;
+      color: darkgreen;
+     padding: 15px 23px 15px 23px;
+      text-align: center;
+      font-size: 1rem;
+      cursor: pointer;
+       margin-left: 2%;
+  }
+
+
+  /* footer */
+  .footimg{
+
+    width: 100%;
+    height: 20vh;
+  }
+  .footimg::after{
+      content: '';
+    background-color: black;
+    
+
+  }
+  .copy{
+    background-color: #206a5d;
+    color: white;
+    text-align: center;
+    justify-content: center;
+   margin-top: -4px;
+   padding-bottom: 2%;
+   padding-top: 1.5%;
+   font-size: 1.4rem;
+   font-family: serif;
   }
