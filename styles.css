@@ -6,6 +6,59 @@
 body{
 
 }
+/* header section */
+#header{
+  top: 0;
+  left: 0;
+  position: fixed;
+ text-decoration: none;
+  width: 100%;
+
+}
+.header-container{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 10px 70px;
+}
+
+.options{
+
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+ padding-right: 5%;
+}
+.box{
+
+  padding-top: 2%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 30%;
+  width: 80px;
+  text-align: center;
+  align-items: center;
+  height: 35px;
+  background-color: black;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.opt{
+    position: absolute;
+  font-size: 1.0rem;
+  list-style: none;
+ text-decoration: none;
+  text-align: center;
+  align-items:center;
+  color: white;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+
 /* vacanza cover */
 
 #title{
@@ -86,7 +139,7 @@ text-shadow: 2px 2px 5px darkgreen;
   font-weight: bold;
   font-family: 'Roboto',serif;
   font-size: 0.9rem;
-  z-index: initial;
+  z-index: 100;
     margin: 0 1% 0 1%;
     cursor: pointer;
 }
@@ -114,6 +167,7 @@ margin-top: -80px;
   padding: 2% 0 2% 0;
   background-color: white;
   box-shadow: 5px 10px darkgray;
+  word-wrap: break-word;
 }
 .round-1{
   width: 30%;
@@ -177,7 +231,7 @@ margin-left: 2%;
 
 }
 .mai1{
-
+ word-wrap: break-word;
     width: 100%;
     padding: 2% 20% 2% 0;
     background-color: white;
@@ -212,7 +266,7 @@ text-align: left;
 float: left;
 }
 .mai2{
-
+ word-wrap: break-word;
     width: 100%;
     padding: 2% 0% 8% 0;
     background-color: white;
