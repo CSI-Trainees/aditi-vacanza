@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body{
-
+right: 0;
+left: 0;
 }
 /* header section */
 #header{
@@ -155,14 +156,11 @@ position: relative;
   font-family: 'Roboto',sans-serif;
   font-size: 1.5rem;
   cursor: pointer;
-
-
-
 }
 .vbtn:hover{
   background-color: white;
   color: black;
-
+transition: 0.5s ease;
 }
 
 /* round 1section */
@@ -241,6 +239,10 @@ margin-left: 2%;
   cursor: pointer;
    margin-left: 2%;
 }
+.rules:hover{
+  background-color: darkgreen;
+  color: white;
+}
 /* round2 section */
 .matter1{
   float: right;
@@ -278,6 +280,10 @@ margin-left: 2%;
     cursor: pointer;
 
 }
+.rules1:hover{
+  background-color: darkgreen;
+  color: white;
+}
 /* round3 section */
 .matter2{
   background-color: #f4f4f4;
@@ -313,56 +319,59 @@ float: left;
       cursor: pointer;
        margin-left: 2%;
   }
-
+  .rules2:hover{
+    background-color: darkgreen;
+    color: white;
+  }
 
   /* footer */
   #footer{
-    text-align:center;
-    padding-top: 110%;
-  }
-
-  .footimg{
-  background-image: url("images/footer.png");
-    width: 100%;
-    height: 20vh;
-
-
-  }
-  .footimg::after{
-      content: '';
-    background-color: black;
-
-
-  }
-  .icons{
-    padding-top: 5%;
-    font-size: 2rem;
-  top: 4px;
-  text-align: center;
-  color: black;
-
-
-  }
-  /* .fa{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: -80px;
-    text-decoration:
-    color:white;
-  } */
-  .copy{
-    background-color: #206a5d;
-    color: white;
-    height: 5vh;
     text-align: center;
     justify-content: center;
- margin-top: -10px;
-   padding-bottom: 5%;
-   padding-top: 1.2%;
-   font-size: 1rem;
-   font-family: serif;
+  height: 25%;
+  width: 100%;
+  }
 
-  }
-  .rights{
-    padding-top: 5%;
-  }
+  .foot{
+      background-image: url("images/footer.png");
+    position: relative;
+    height: 27vh;
+    margin-top: 1650px;
+    z-index: 2;
+    overflow: hidden;
+    top: 52px;
+
+}
+.copy{
+  text-align: center;
+  justify-content: center;
+  background-color: #4f8a8b;
+}
+.ico {
+  position:relative;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+
+  margin-top: -90px;
+  z-index: 3;
+
+bottom: 60px;
+}
+.ico a{
+  justify-content: space-between;
+  color: white;
+  padding-left: 1%;
+  text-decoration: underline;
+
+}
+.ico a:hover{
+
+  color: purple;
+   transition: 0.4s;
+
+}
