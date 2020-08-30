@@ -9,8 +9,12 @@ left: 0;
 }
 /* header section */
 #header{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   top: 0;
   left: 0;
+
   position: fixed;
  text-decoration: none;
   width: 100%;
@@ -24,9 +28,11 @@ left: 0;
   text-decoration: none;
 text-transform: uppercase;
 
-text-shadow:black;
+-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
   }
 .header-container{
+  padding-left: 20%;
   display: flex;
   align-items:center;
   justify-content: space-between;
@@ -40,8 +46,8 @@ text-shadow:black;
   display: flex;
   flex-direction: row;
   list-style: none;
-
- padding-right: 5%;
+/*
+ padding-right: 5%; */
 }
 .box{
 
@@ -125,12 +131,18 @@ text-shadow:black;
 position: relative;
 z-index: 2;
   align-items: center;
-  width: 15%;
+  width: 10%;
   margin-top: -250px;
   opacity: 0.9;
   padding-bottom: 80px;
+transition: 0.9s;
+}
+.logo:hover{
+transform: rotate(1800deg) scale(1.2);
 
 }
+
+
 
 .vacanza{
   z-index: 2;
@@ -367,11 +379,15 @@ bottom: 60px;
   color: white;
   padding-left: 1%;
   text-decoration: underline;
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    transition:0.4s;
 
 }
 .ico a:hover{
 
   color: purple;
-   transition: 0.4s;
+  transform: rotate(30deg) scale(1.5);
+
 
 }
