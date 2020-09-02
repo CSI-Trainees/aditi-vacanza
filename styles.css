@@ -16,7 +16,7 @@ left: 0;
   box-sizing: border-box;
   top: 0;
   left: 0;
-
+overflow-x: hidden;
   position: fixed;
  text-decoration: none;
   width: 100%;
@@ -88,7 +88,8 @@ text-transform: uppercase;
 #title{
   padding-top: 900px;
 
-
+overflow-x: hidden;
+overflow-y: hidden;
  width: 100vw;
  margin-bottom: -480px;
 
@@ -128,40 +129,66 @@ text-transform: uppercase;
   width: 100%;
   font-family: sans-serif;
   display: flex;
+   overflow-x: hidden;
 }
 .text{
-  margin-top: -550px;
+  margin-top: -590px;
   z-index: 2;
+
+
 
 }
 .logo{
 position: relative;
 z-index: 2;
   align-items: center;
-  width: 10%;
-  margin-top: -250px;
+  width: 13%;
+  margin-top: -270px;
   opacity: 0.9;
-  padding-bottom: 80px;
--webkit-transition: -webkit-transform 0.7s;
+animation: backspin 1s ;
+
 }
+
 .logo:hover{
--webkit-transform: rotate(1440deg) scale(1.2) translateZ(0);
-;
+    animation: spin 1s ;
+    }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg) scale(1);
+    } to {
+        transform: rotate(720deg) scale(1.1);
+    }
 }
 
+@keyframes backspin {
+    from {
+        transform: rotate(720deg) scale(1.1);
+    } to {
+        transform: rotate(0deg) scale(1);
+    }
+}
 
+/* .logo:hover {
+transform: scale(1.1) rotate(360deg) translate(0) ;
+
+} */
+
+.vactext{
+  padding-top: 2%;
+}
 
 .vacanza{
   z-index: 2;
 position: relative;
   width: 100%;
+  padding-top: 2%;
   margin-right: 4%;
   align-items: center;
   justify-content: center;
   text-align: center;
   height:15vh;
-  margin-top: -60px;
+  margin-top: -40px;
 
 }
 .vbtn{
@@ -176,6 +203,7 @@ position: relative;
   font-family: 'Roboto',sans-serif;
   font-size: 1.5rem;
   cursor: pointer;
+   transition: all 0.5s;
 
 }
 .vbtn:hover{
@@ -188,10 +216,34 @@ transition: 0.5s ease;
 .vbtn:hover:after {
   content: '\00bb';
   position: absolute;
+  color: black;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.vbtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.vbtn span:after {
+  content: '\00bb';
+  position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
+}
+
+.vbtn:hover span {
+  padding-right: 25px;
+}
+
+.vbtn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 
@@ -368,21 +420,16 @@ float: left;
   width: 100%;
   }
   @keyframes effect {
-    0%{
-      transform:  translateY(-0.2%) scale(3.8) scale(0.8);
-    }
-    50%{
-      transform:translateY(-0.9%) scale(2.8) ;
-    }
-    100%{
-      transform:  translateY(-0.2%) scale(3.8) scale(0.8);
-    }
-
-  }
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
 
   .foot{
 
-    margin-top: 1650px;
+    margin-top: 1530px;
     z-index: 1;
 
     top: 52px;
@@ -405,7 +452,7 @@ float: left;
 .copy{
   text-align: center;
   justify-content: center;
-  background-color: #4f8a8b;
+  background-color: darkgreen;
 }
 .ico {
   position:relative;
