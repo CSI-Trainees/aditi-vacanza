@@ -142,10 +142,11 @@ z-index: 2;
   margin-top: -250px;
   opacity: 0.9;
   padding-bottom: 80px;
-transition: 0.9s;
+-webkit-transition: -webkit-transform 0.7s;
 }
 .logo:hover{
-transform: rotate(1800deg) scale(1.2);
+-webkit-transform: rotate(1440deg) scale(1.2) translateZ(0);
+;
 
 }
 
@@ -182,6 +183,20 @@ position: relative;
   color: black;
 transition: 0.5s ease;
 }
+
+
+.vbtn:hover:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
+
+
 
 /* round 1section */
 .middle-container{
@@ -354,13 +369,13 @@ float: left;
   }
   @keyframes effect {
     0%{
-      transform:  translateY(-0.2%);
+      transform:  translateY(-0.2%) scale(3.8) scale(0.8);
     }
     50%{
-      transform:translateY(-0.9%);
+      transform:translateY(-0.9%) scale(2.8) ;
     }
     100%{
-      transform:  translateY(-0.5%);
+      transform:  translateY(-0.2%) scale(3.8) scale(0.8);
     }
 
   }
