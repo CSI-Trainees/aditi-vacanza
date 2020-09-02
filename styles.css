@@ -417,7 +417,7 @@ float: left;
 
     top: 52px;
     padding-bottom: 2%;
-    height: 8rem;
+    height: 9rem;
     position: relative;
     overflow: hidden;
 
@@ -435,7 +435,7 @@ float: left;
 .copy{
   text-align: center;
   justify-content: center;
-  background-color: darkgreen;
+  background-color: rgb(24, 109, 69);
 }
 .ico {
   position:relative;
